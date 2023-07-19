@@ -11,3 +11,8 @@ td i {
 td, th {
     color: var(--primary-color);
 }
+
+.wishlist_items{
+    display: flex;
+    justify-content: cloumn;    
+}

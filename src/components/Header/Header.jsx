@@ -70,6 +70,9 @@ const Header = () => {
   const navigateToCart = () => {
     navigate('/cart'); 
   }
+  const navigateToWishlist = () => {
+    navigate('/wishlist'); 
+  }
 
   const toggleProfileActions = () => profileActionRef.current.classList.toggle("show__profileActions");
 
@@ -103,7 +106,7 @@ const Header = () => {
             </div>
 
             <div className="nav__icons">
-              <span className="fav__icon">
+              <span className="fav__icon" onClick={navigateToWishlist}>
                 <i className="ri-heart-line"></i>
                 <span className="badge">1</span>
               </span>
